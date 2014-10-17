@@ -101,11 +101,11 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\SB2Revival_MonoGames\SB2R_ADMIN\SB2R_ADMIN.csproj">
+    <ProjectReference Include="..\..\SB2R_ADMIN\SB2R_ADMIN.csproj">
       <Project>{7a4eafd5-e329-43b6-9454-ce6129d8d607}</Project>
       <Name>SB2R_ADMIN</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\SB2Revival_MonoGames\SB2R_MU001\SB2R_MU001.csproj">
+    <ProjectReference Include="..\..\SB2R_MU001\SB2R_MU001.csproj">
       <Project>{66f2efde-78e4-49f0-b8df-a7da69310f9d}</Project>
       <Name>SB2R_MU001</Name>
     </ProjectReference>
