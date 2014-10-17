@@ -24,7 +24,7 @@ namespace SB2Revival.ItemCl
     Belt,
     NeckTie,
     Wings}
-    public enum ItType { Armor, Weapon, Quest, Useable, Permanant }
+    public enum ItType {Equipment, Quest, Useable, Permanant }
     public abstract class BaseItem
     {
         #region Field Region
@@ -34,9 +34,9 @@ namespace SB2Revival.ItemCl
         bool equipped;
         #endregion
         #region Property Region
-        public List<Type> BlockedClasses
+        public List<string> BlockedClasses
         {
-            get { return blockedClasses }
+            get { return blockedClasses; }
             protected set { blockedClasses = value; }
         }
         public string Name
@@ -58,8 +58,10 @@ namespace SB2Revival.ItemCl
         #region Constructor Region
         public BaseItem(string name, int price, params String[] blockedClasses)
         {
+            List<string> temp = new List<string>();
             foreach (string t in blockedClasses)
-                blockedClasses.Add(t);
+                temp.Add(t);
+            this.blockedClasses = temp;
             Name = name;
             Price = price;
             IsEquiped = false;
