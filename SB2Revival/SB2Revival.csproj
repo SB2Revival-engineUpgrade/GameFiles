@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{7F948B7D-55E1-4C1D-A745-067A6E4E2E41}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SB2Revival</RootNamespace>
+    <AssemblyName>SB2R_MU000</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <XnaProfile>Reach</XnaProfile>
+    <XnaCrossPlatformGroupID>5f944db5-acc5-40e7-bf30-05ed7067d93a</XnaCrossPlatformGroupID>
+    <XnaOutputType>Library</XnaOutputType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>false</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>true</XnaCompressContent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Avatar, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.GamerServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Input.Touch, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Net, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Storage, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Video, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Xact, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Net" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CharaClasses\Base\Attrib.cs" />
+    <Compile Include="CharaClasses\Character.cs" />
+    <Compile Include="Controls\Control.cs" />
+    <Compile Include="Controls\ControlManager.cs" />
+    <Compile Include="Controls\Label.cs" />
+    <Compile Include="Controls\LeftRightSelector.cs" />
+    <Compile Include="Controls\LinkLabel.cs" />
+    <Compile Include="Controls\PictureBox.cs" />
+    <Compile Include="Errors\ErrorFileNotFound.cs" />
+    <Compile Include="GameState.cs" />
+    <Compile Include="GameStateManager.cs" />
+    <Compile Include="InputHandler.cs" />
+    <Compile Include="ItemCl\BaseItem.cs" />
+    <Compile Include="ItemCl\Weapon.cs" />
+    <Compile Include="Music\TCallbackFunc.cs" />
+    <Compile Include="Music\TBPMDetectionMethod.cs" />
+    <Compile Include="Music\TCallbackMessage.cs" />
+    <Compile Include="Music\TEchoEffect.cs" />
+    <Compile Include="Music\TFFTGraphHorizontalScale.cs" />
+    <Compile Include="Music\TFFTGraphParamID.cs" />
+    <Compile Include="Music\TFFTGraphSize.cs" />
+    <Compile Include="Music\TFFTGraphType.cs" />
+    <Compile Include="Music\TFFTWindow.cs" />
+    <Compile Include="Music\TID3Info.cs" />
+    <Compile Include="Music\TID3InfoEx.cs" />
+    <Compile Include="Music\TID3Picture.cs" />
+    <Compile Include="Music\TID3Version.cs" />
+    <Compile Include="Music\TSeekMethod.cs" />
+    <Compile Include="Music\TSettingID.cs" />
+    <Compile Include="Music\TStreamFormat.cs" />
+    <Compile Include="Music\TStreamHMSTime.cs" />
+    <Compile Include="Music\TStreamInfo.cs" />
+    <Compile Include="Music\TStreamLoadInfo.cs" />
+    <Compile Include="Music\TStreamStatus.cs" />
+    <Compile Include="Music\TStreamTime.cs" />
+    <Compile Include="Music\TTimeFormat.cs" />
+    <Compile Include="Music\TWaveInInfo.cs" />
+    <Compile Include="Music\TWaveInMapper.cs" />
+    <Compile Include="Music\TWaveOutFormat.cs" />
+    <Compile Include="Music\TWaveOutFunctionality.cs" />
+    <Compile Include="Music\TWaveOutInfo.cs" />
+    <Compile Include="Music\TWaveOutMapper.cs" />
+    <Compile Include="Music\ZPlay.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SpriteCl\AnimatedSprite.cs" />
+    <Compile Include="SpriteCl\Animation.cs" />
+    <Compile Include="SpriteCl\AnimationKey.cs" />
+    <Compile Include="TileEngine\Camera.cs" />
+    <Compile Include="TileEngine\Engine.cs" />
+    <Compile Include="TileEngine\EventInfo.cs" />
+    <Compile Include="TileEngine\EventLayer.cs" />
+    <Compile Include="TileEngine\MapLayer.cs" />
+    <Compile Include="TileEngine\TileCo.cs" />
+    <Compile Include="TileEngine\TileInfo.cs" />
+    <Compile Include="TileEngine\TileMap.cs" />
+    <Compile Include="TileEngine\TileSet.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>
