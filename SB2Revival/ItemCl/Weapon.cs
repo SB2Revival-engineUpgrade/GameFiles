@@ -44,29 +44,33 @@ namespace SB2Revival.ItemCl
         int price,
         float weight,
         Hands hands,
-        int attackValue,
-        int attackModifier,
-        int damageValue,
-        int damageModifier,
         params string[] blockedClasses)
-            : base(weaponName, weaponType, price, weight, blockedClasses)
+            : base(weaponName, price, blockedClasses)
         {
             NumberHands = hands;
+            
         }
         #endregion
         #region Abstract Method Region
         public override object Clone()
         {
+            throw new NotImplementedException();
+        }
+        /*
+        public override object Clone()
+        {
             string[] allowedClasses = new string[blockedClasses.Count];
             for (int i = 0; i < blockedClasses.Count; i++)
                 allowedClasses[i] = blockedClasses[i];
-            Weapon weapon = new Weapon(
+            /*Weapon weapon = new Weapon(
             Name,
             Price,
             NumberHands,
             blockedClasses);
             return weapon;
+             
         }
+         */
         public override string ToString()
         {
             string weaponString = base.ToString() + ", ";
