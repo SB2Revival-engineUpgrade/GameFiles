@@ -1,0 +1,11 @@
+C:\Users\MutationInc\documents\visual studio 2012\Projects\SB2Revival_MonoGames\SB2R_ADMIN\bin\Release\SB2R_ADMIN.exe
+C:\Users\MutationInc\documents\visual studio 2012\Projects\SB2Revival_MonoGames\SB2R_ADMIN\bin\Release\SB2R_ADMIN.pdb
+C:\Users\MutationInc\documents\visual studio 2012\Projects\SB2Revival_MonoGames\SB2R_ADMIN\bin\Release\SB2R_MU001.dll
+C:\Users\MutationInc\documents\visual studio 2012\Projects\SB2Revival_MonoGames\SB2R_ADMIN\bin\Release\SB2R_MU001.pdb
+C:\Users\MutationInc\documents\visual studio 2012\Projects\SB2Revival_MonoGames\SB2R_ADMIN\obj\Release\SB2R_ADMIN.csprojResolveAssemblyReference.cache
+C:\Users\MutationInc\documents\visual studio 2012\Projects\SB2Revival_MonoGames\SB2R_ADMIN\obj\Release\SB2R_ADMIN.AdminToolsCollect.resources
+C:\Users\MutationInc\documents\visual studio 2012\Projects\SB2Revival_MonoGames\SB2R_ADMIN\obj\Release\SB2R_ADMIN.Properties.Resources.resources
+C:\Users\MutationInc\documents\visual studio 2012\Projects\SB2Revival_MonoGames\SB2R_ADMIN\obj\Release\SB2R_ADMIN.ScreenSize.SizeEdit.resources
+C:\Users\MutationInc\documents\visual studio 2012\Projects\SB2Revival_MonoGames\SB2R_ADMIN\obj\Release\SB2R_ADMIN.csproj.GenerateResource.Cache
+C:\Users\MutationInc\documents\visual studio 2012\Projects\SB2Revival_MonoGames\SB2R_ADMIN\obj\Release\SB2R_ADMIN.exe
+C:\Users\MutationInc\documents\visual studio 2012\Projects\SB2Revival_MonoGames\SB2R_ADMIN\obj\Release\SB2R_ADMIN.pdb
