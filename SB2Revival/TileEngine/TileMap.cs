@@ -67,7 +67,7 @@ namespace SB2Revival.TileEngine
         {
             Rectangle destination = new Rectangle(0, 0, Engine.TileWidth, Engine.TileHeight);
             TileInfo tile;
-            foreach (MapLayer layer in mapLayers)
+            foreach (MapLayer layer in this.mapLayers)
             {
                 for (int y = 0; y < layer.Height; y++)
                 {
@@ -76,13 +76,15 @@ namespace SB2Revival.TileEngine
                     {
                         tile = layer.GetTile(x, y);
                         if (tile.TileIndex == -1 || tile.TileSet == -1)
+                        {
                             continue;
+                        }
                         destination.X = x * Engine.TileWidth;
                         spriteBatch.Draw(
-                        tilesets[tile.TileSet].Texture,
-                        destination,
-                        tilesets[tile.TileSet].SourceRecs[tile.TileIndex],
-                        Color.White);
+                            this.tilesets[tile.TileSet].Texture,
+                            destination,
+                            this.tilesets[tile.TileSet].SourceRecs[tile.TileIndex],
+                            Color.White);
                     }
                 }
             }

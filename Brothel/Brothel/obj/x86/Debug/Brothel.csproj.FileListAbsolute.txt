@@ -20,3 +20,25 @@ C:\Users\MutationInc\documents\visual studio 2012\Projects\SB2Revival\Brothel\Br
 C:\Users\MutationInc\documents\visual studio 2012\Projects\SB2Revival\Brothel\Brothel\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.xml
 C:\Users\MutationInc\documents\visual studio 2012\Projects\SB2Revival\Brothel\Brothel\obj\x86\Debug\Sim Brothel 2 Revival.exe
 C:\Users\MutationInc\documents\visual studio 2012\Projects\SB2Revival\Brothel\Brothel\obj\x86\Debug\Sim Brothel 2 Revival.pdb
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel\bin\x86\Debug\Data\Graphics\Engine\Fonts\Print.xnb
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel\bin\x86\Debug\Data\Graphics\Engine\Fonts\Script.xnb
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel\bin\x86\Debug\Sim Brothel 2 Revival.exe
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel\bin\x86\Debug\Sim Brothel 2 Revival.pdb
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel\bin\x86\Debug\Microsoft.Xna.Framework.dll
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel\bin\x86\Debug\Microsoft.Xna.Framework.Game.dll
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.dll
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.dll
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel\bin\x86\Debug\SB2R_MU000.dll
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel\bin\x86\Debug\SB2R_MU001.dll
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel\bin\x86\Debug\Sim Brothel 2 Revival Dev-Admin Tools.exe
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel\bin\x86\Debug\Sim Brothel 2 Revival Dev-Admin Tools.pdb
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel\bin\x86\Debug\SB2R_MU001.pdb
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel\bin\x86\Debug\SB2R_MU000.pdb
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel\bin\x86\Debug\Microsoft.Xna.Framework.xml
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel\bin\x86\Debug\Microsoft.Xna.Framework.Game.xml
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.xml
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.xml
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel\obj\x86\Debug\Brothel.csprojResolveAssemblyReference.cache
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel\obj\x86\Debug\Sim Brothel 2 Revival.exe
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel\obj\x86\Debug\Sim Brothel 2 Revival.pdb

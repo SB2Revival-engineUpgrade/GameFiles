@@ -1,4 +1,11 @@
-﻿using System;
+﻿// =SB2Revival Engine Upgrade=
+// =C#/XNA convertion from Rpg Maker=
+// =Programmers=
+// =Mute Lovestone=
+// =AnimatedSprite.cs=
+// = 10/17/2014 =
+// =SB2Revival=
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,73 +29,109 @@ namespace SB2Revival.SpriteCl
         #region Property Region
         public AnimationKey CurrentAnimation
         {
-            get { return currentAnimation; }
-            set { currentAnimation = value; }
+            get
+            {
+                return this.currentAnimation;
+            }
+            set
+            {
+                this.currentAnimation = value;
+            }
         }
         public bool IsAnimating
         {
-            get { return isAnimating; }
-            set { isAnimating = value; }
+            get
+            {
+                return this.isAnimating;
+            }
+            set
+            {
+                this.isAnimating = value;
+            }
         }
         public int Width
         {
-            get { return animations[currentAnimation].FrameWidth; }
+            get
+            {
+                return this.animations[this.currentAnimation].FrameWidth;
+            }
         }
         public int Height
         {
-            get { return animations[currentAnimation].FrameHeight; }
+            get
+            {
+                return this.animations[this.currentAnimation].FrameHeight;
+            }
         }
         public float Speed
         {
-            get { return speed; }
-            set { speed = MathHelper.Clamp(speed, 1.0f, 16.0f); }
+            get
+            {
+                return this.speed;
+            }
+            set
+            {
+                this.speed = MathHelper.Clamp(this.speed, 1.0f, 16.0f);
+            }
         }
         public Vector2 Position
         {
-            get { return position; }
+            get
+            {
+                return this.position;
+            }
             set
             {
-                position = value;
+                this.position = value;
             }
         }
         public Vector2 Velocity
         {
-            get { return velocity; }
+            get
+            {
+                return this.velocity;
+            }
             set
             {
-                velocity = value;
-                if (velocity != Vector2.Zero)
-                    velocity.Normalize();
+                this.velocity = value;
+                if (this.velocity != Vector2.Zero)
+                {
+                    this.velocity.Normalize();
+                }
             }
         }
         #endregion
         #region Constructor Region
         public AnimatedSprite(Texture2D sprite, Dictionary<AnimationKey, Animation> animation)
         {
-            texture = sprite;
-            animations = new Dictionary<AnimationKey, Animation>();
+            this.texture = sprite;
+            this.animations = new Dictionary<AnimationKey, Animation>();
             foreach (AnimationKey key in animation.Keys)
-                animations.Add(key, (Animation)animation[key].Clone());
+            {
+                this.animations.Add(key, (Animation)animation[key].Clone());
+            }
         }
         #endregion
         #region Method Region
         public void Update(GameTime gameTime)
         {
-            if (isAnimating)
-                animations[currentAnimation].Update(gameTime);
+            if (this.isAnimating)
+            {
+                this.animations[this.currentAnimation].Update(gameTime);
+            }
         }
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch, Camera camera)
         {
             spriteBatch.Draw(
-            texture,
-            position,
-            animations[currentAnimation].CurrentFrameRect,
-            Color.White);
+                this.texture,
+                this.position,
+                this.animations[this.currentAnimation].CurrentFrameRect,
+                Color.White);
         }
         public void LockToMap()
         {
-            position.X = MathHelper.Clamp(position.X, 0, TileMap.WidthInPixels - Width);
-            position.Y = MathHelper.Clamp(position.Y, 0, TileMap.HeightInPixels - Height);
+            this.position.X = MathHelper.Clamp(this.position.X, 0, TileMap.WidthInPixels - this.Width);
+            this.position.Y = MathHelper.Clamp(this.position.Y, 0, TileMap.HeightInPixels - this.Height);
         }
         #endregion
     }

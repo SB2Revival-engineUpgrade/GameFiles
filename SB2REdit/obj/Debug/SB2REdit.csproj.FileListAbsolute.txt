@@ -1,0 +1,13 @@
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2REdit\bin\Debug\SB2REdit.exe
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2REdit\bin\Debug\SB2REdit.pdb
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2REdit\bin\Debug\SB2R_MU000.dll
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2REdit\bin\Debug\SB2R_MU001.dll
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2REdit\bin\Debug\SB2R_MU000.pdb
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2REdit\bin\Debug\SB2R_MU001.pdb
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2REdit\obj\Debug\SB2REdit.csprojResolveAssemblyReference.cache
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2REdit\obj\Debug\SB2REdit.Main.Form1.resources
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2REdit\obj\Debug\SB2REdit.Properties.Resources.resources
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2REdit\obj\Debug\SB2REdit.csproj.GenerateResource.Cache
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2REdit\obj\Debug\SB2REdit.exe
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2REdit\obj\Debug\SB2REdit.pdb
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2REdit\obj\Debug\SB2REdit.Elem.ElemForm.resources

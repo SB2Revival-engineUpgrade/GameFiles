@@ -4,7 +4,7 @@
 // =Mute Lovestone=
 // =Animation.cs=
 // = 10/17/2014 =
-// =Brothel=
+// =SB2Revival=
 using System;
 using System.Collections.Generic;
 using System.Linq;
