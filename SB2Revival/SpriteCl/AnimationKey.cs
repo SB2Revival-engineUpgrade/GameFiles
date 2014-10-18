@@ -4,7 +4,7 @@
 // =Mute Lovestone=
 // =AnimationKey.cs=
 // = 10/17/2014 =
-// =Brothel=
+// =SB2Revival=
 namespace SB2Revival.SpriteCl
 {
     public enum AnimationKey

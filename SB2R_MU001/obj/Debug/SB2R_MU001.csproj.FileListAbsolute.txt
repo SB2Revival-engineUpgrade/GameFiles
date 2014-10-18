@@ -3,3 +3,8 @@ C:\Users\MutationInc\documents\visual studio 2012\Projects\SB2Revival_MonoGames\
 C:\Users\MutationInc\documents\visual studio 2012\Projects\SB2Revival_MonoGames\SB2R_MU001\obj\Debug\SB2R_MU001.dll
 C:\Users\MutationInc\documents\visual studio 2012\Projects\SB2Revival_MonoGames\SB2R_MU001\obj\Debug\SB2R_MU001.pdb
 C:\Users\MutationInc\documents\visual studio 2012\Projects\SB2Revival_MonoGames\SB2R_MU001\obj\Debug\SB2R_MU001.csprojResolveAssemblyReference.cache
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2R_MU001\bin\Debug\SB2R_MU001.dll
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2R_MU001\bin\Debug\SB2R_MU001.pdb
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2R_MU001\obj\Debug\SB2R_MU001.csprojResolveAssemblyReference.cache
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2R_MU001\obj\Debug\SB2R_MU001.dll
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2R_MU001\obj\Debug\SB2R_MU001.pdb
