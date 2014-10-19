@@ -20,6 +20,8 @@ namespace SB2R.MuCom
         private string GameLoc2 = Environment.CurrentDirectory;
         private string GuiLoc = @"\Data\Graphics\Engine\GUI\";
         private string BackGroundLoc = @"\Data\Graphics\Engine\Menus\Main\";
+        private string ElementLoc = @"\Data\Game\Elements\";
+        private string IconLoc = @"\Data\Graphics\Engine\Icons";
         #endregion
         #region Properties region
         #endregion
@@ -37,6 +39,14 @@ namespace SB2R.MuCom
         public string GetBackLoc()
         {
             return string.Format("{0}{1}", this.GameLoc2, this.BackGroundLoc);
+        }
+        public string GetElemLoc()
+        {
+            return string.Format("{0}{1}", this.GameLoc2, this.ElementLoc);
+        }
+        public string GetIconLoc()
+        {
+            return string.Format("{0}{1}", this.GameLoc2, this.IconLoc);
         }
         #endregion
     }

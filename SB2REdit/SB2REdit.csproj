@@ -56,6 +56,12 @@
     <Compile Include="Elem\ElemForm.Designer.cs">
       <DependentUpon>ElemForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Icon\IconViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Icon\IconViewer.Designer.cs">
+      <DependentUpon>IconViewer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Elem\ElemForm.resx">
       <DependentUpon>ElemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icon\IconViewer.resx">
+      <DependentUpon>IconViewer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

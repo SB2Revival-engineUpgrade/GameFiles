@@ -57,6 +57,10 @@ namespace SB2Revival.ElemCl
                 temp.Write(name);
             }
         }
+        /// <summary>
+        /// checks to see if the file location exists, to avoid errors
+        /// </summary>
+        /// <param name="file"></param>
         private void CHkLoc(string file)
         {
             if (!Directory.Exists(file))
@@ -81,5 +85,9 @@ namespace SB2Revival.ElemCl
             private set { this.id = value; }
         }
         #endregion
+    }
+    public class ElemAtk
+    {
+
     }
 }

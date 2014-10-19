@@ -50,7 +50,8 @@ namespace SB2Revival.ItemCl
     /// </summary>
     public enum ItType
     {
-        Equipment,
+        Weapon,
+        Armor,
         Quest,
         Useable,
         Permanant,
@@ -86,6 +87,14 @@ namespace SB2Revival.ItemCl
         /// the item id
         /// </summary>
         int id;
+        /// <summary>
+        /// this stores the items icon string, really just name+Extention, the file location will be stored elsewhere
+        /// </summary>
+        string Icon;
+        /// <summary>
+        /// this will hold what type of item it is
+        /// </summary>
+        ItType type;
         #endregion
         #region Property Region
         public List<string> BlockedClasses
@@ -110,6 +119,28 @@ namespace SB2Revival.ItemCl
                 this.name = value;
             }
         }
+        public string ICon
+        {
+            get
+            {
+                return this.Icon;
+            }
+            protected set
+            {
+                this.Icon= value;
+            }
+        }
+        public string Description
+        {
+            get
+            {
+                return this.description;
+            }
+            protected set
+            {
+                this.description = value;
+            }
+        }
         public int Price
         {
             get
@@ -119,6 +150,17 @@ namespace SB2Revival.ItemCl
             protected set
             {
                 this.price = value;
+            }
+        }
+        public int ID
+        {
+            get
+            {
+                return this.id;
+            }
+            protected set
+            {
+                this.id = value;
             }
         }
         public bool IsEquiped
@@ -132,9 +174,11 @@ namespace SB2Revival.ItemCl
                 this.equipped = value;
             }
         }
+        public ItType Type
+        { get { return this.type; } private set { this.type = value; } }
         #endregion
         #region Constructor Region
-        public BaseItem(string name, int price,int ID,string discription, params String[] blockedClasses)
+        public BaseItem(string name, int price,int ID,string discription,ItType type, params String[] blockedClasses)
         {
             List<string> temp = new List<string>();
             foreach (string t in blockedClasses)
@@ -147,6 +191,7 @@ namespace SB2Revival.ItemCl
             this.Price = price;
             this.id = ID;
             this.IsEquiped = false;
+            this.type = type;
         }
         #endregion
         #region Abstract Method Region

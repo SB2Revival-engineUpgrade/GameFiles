@@ -42,3 +42,5 @@ C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel
 C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel\obj\x86\Debug\Sim Brothel 2 Revival.exe
 C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel\obj\x86\Debug\Sim Brothel 2 Revival.pdb
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel\bin\x86\Debug\SB2REdit.exe
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel\bin\x86\Debug\SB2REdit.pdb

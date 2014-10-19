@@ -47,19 +47,38 @@ namespace SB2R.MuCom
                     r[num].A = pixel.A;
                     r[num].R = pixel.R;
                     r[num].G = pixel.G;
-                    if (pixel.B == 255)
-                    {
-                        r[num].B = Convert.ToByte(pixel.B / 2);
-                    }
-                    else
-                    {
-                        r[num].B = pixel.B;
-                    }
+                    r[num].B = pixel.B;
                     num++;
                 }
             }
             this.texture.SetData<Microsoft.Xna.Framework.Color>(r);
             
+            this.hight = 0;
+            this.wid = 0;
+            return this.texture;
+        }
+        public Texture2D Convert(Bitmap image)
+        {
+            this.hight = image.Height;
+            this.wid = image.Width;
+            this.texture = new Texture2D(this.GameRef.Gra.GraphicsDevice, this.wid, this.hight);
+            Microsoft.Xna.Framework.Color[] r = new Microsoft.Xna.Framework.Color[this.wid * this.hight];
+            int num = 0;
+            for (int i = 0; i < this.hight; i++)
+            {
+                for (int j = 0; j < this.wid; j++)
+                {
+                    System.Drawing.Color pixel = image.GetPixel(j, i);
+                    r[num].A = pixel.A;
+                    r[num].R = pixel.R;
+                    r[num].G = pixel.G;
+                    r[num].B = pixel.B;
+                    
+                    num++;
+                }
+            }
+            this.texture.SetData<Microsoft.Xna.Framework.Color>(r);
+
             this.hight = 0;
             this.wid = 0;
             return this.texture;

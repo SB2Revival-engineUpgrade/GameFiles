@@ -11,3 +11,4 @@ C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2REdit\obj\De
 C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2REdit\obj\Debug\SB2REdit.exe
 C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2REdit\obj\Debug\SB2REdit.pdb
 C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2REdit\obj\Debug\SB2REdit.Elem.ElemForm.resources
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2REdit\obj\Debug\SB2REdit.Icon.IconViewer.resources

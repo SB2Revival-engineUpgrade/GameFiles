@@ -136,6 +136,8 @@
     <Compile Include="SpriteCl\AnimatedSprite.cs" />
     <Compile Include="SpriteCl\Animation.cs" />
     <Compile Include="SpriteCl\AnimationKey.cs" />
+    <Compile Include="SpriteCl\DynamicSprite.cs" />
+    <Compile Include="StatusCl\StatusPlus.cs" />
     <Compile Include="TileEngine\Camera.cs" />
     <Compile Include="TileEngine\Engine.cs" />
     <Compile Include="TileEngine\EventInfo.cs" />
@@ -146,7 +148,9 @@
     <Compile Include="TileEngine\TileMap.cs" />
     <Compile Include="TileEngine\TileSet.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Errors\SoundEffects\" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
   <!--

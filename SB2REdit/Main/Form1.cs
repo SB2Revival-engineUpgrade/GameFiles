@@ -9,43 +9,36 @@ using System.Windows.Forms;
 using SB2Revival.ElemCl;
 using SB2REdit.Elem;
 using System.IO;
+using SB2REdit.Icon;
 namespace SB2REdit.Main
-{
+{   
+    #region Enums
+    /// <summary>
+    /// this is so you know what type of item to create
+    /// </summary>
     public enum Selected { Element, Weapon, Armor }
+    /// <summary>
+    /// This is so you know when and if on exit it should save
+    /// </summary>
     public enum ElemEdit { Editing, New, Saved }
+    #endregion
     public partial class Form1 : Form
     {
-        private int childFormNumber = 0;
-        
+        #region Values
         public Selected Choice;
         public ElemEdit ElsEdited;
         public List<Element> elems = new List<Element>();
         private ElemForm FormNewElem;
+        public List<string> Iconnames = new List<string>();
+        int itemsLoaded = 0;
+        #endregion
+        #region form events
         public Form1()
         {
             InitializeComponent();
+            //keeps things from not working right, without this you get threading error
             CheckForIllegalCrossThreadCalls = false;
         }
-
-        private void ShowNewForm(object sender, EventArgs e)
-        {
-            Form childForm = new Form();
-            childForm.MdiParent = this;
-            childForm.Text = "Window " + childFormNumber++;
-            childForm.Show();
-        }
-
-        private void OpenFile(object sender, EventArgs e)
-        {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-            openFileDialog.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*";
-            if (openFileDialog.ShowDialog(this) == DialogResult.OK)
-            {
-                string FileName = openFileDialog.FileName;
-            }
-        }
-
         private void SaveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             foreach (Element x in this.elems)
@@ -59,18 +52,6 @@ namespace SB2REdit.Main
             this.Close();
         }
 
-        private void CutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void CopyToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void PasteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
-
         private void ToolBarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             toolStrip.Visible = toolBarToolStripMenuItem.Checked;
@@ -80,35 +61,7 @@ namespace SB2REdit.Main
         {
             statusStrip.Visible = statusBarToolStripMenuItem.Checked;
         }
-
-        private void CascadeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            LayoutMdi(MdiLayout.Cascade);
-        }
-
-        private void TileVerticalToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            LayoutMdi(MdiLayout.TileVertical);
-        }
-
-        private void TileHorizontalToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            LayoutMdi(MdiLayout.TileHorizontal);
-        }
-
-        private void ArrangeIconsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            LayoutMdi(MdiLayout.ArrangeIcons);
-        }
-
-        private void CloseAllToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            foreach (Form childForm in MdiChildren)
-            {
-                childForm.Close();
-            }
-        }
-
+        
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
             
@@ -154,6 +107,8 @@ namespace SB2REdit.Main
                 this.FormNewElem.ShowDialog();
             }
         }
+        #endregion
+        #region custom functions
         public void UpList()
         {
             if (Choice.ToString() == "Element")
@@ -172,7 +127,8 @@ namespace SB2REdit.Main
             
             
         }
-
+        #endregion
+        #region loaders/loaderevents
         private void ElemWorker_DoWork(object sender, DoWorkEventArgs e)
         {
             string[] temp = Directory.GetFiles(Environment.CurrentDirectory + @"\Data\Game\Elements", "*.EM");
@@ -189,6 +145,7 @@ namespace SB2REdit.Main
                 he.loader(la);
                 this.elems.Add(he);
                 p++;
+                itemsLoaded++;
                 ElemWorker.ReportProgress(p);
             }
             UpList();
@@ -197,13 +154,62 @@ namespace SB2REdit.Main
         private void ElemWorker_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {
             this.toolStripProgressBar1.Value = e.ProgressPercentage;
+            this.toolStripStatusLabel5.Text = itemsLoaded.ToString();
         }
 
         private void ElemWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
+            //toolStripStatusLabel3.Text = "Loading Complete";
+            toolStripProgressBar1.Value = 0;
+            Iconworker1.RunWorkerAsync();
+        }
+        private void Iconworker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+            string[] temp = Directory.GetFiles(Environment.CurrentDirectory + @"\Data\Graphics\Engine\Icons", "*.png");
+            string[] temp2 = Directory.GetFiles(Environment.CurrentDirectory + @"\Data\Graphics\Engine\Icons", "*.jpg");
+            List<string> tes = temp.ToList();
+            foreach (string x in temp2)
+                tes.Add(x);
+            temp = tes.ToArray();
+            temp2 = new string[0];
+            int i = temp.Count();
+            int p = 0;
+            if (i == 0)
+                i = 1;
+            this.toolStripProgressBar1.Maximum = i;
+            this.toolStripStatusLabel3.Text = "Loading Icon Files";
+            foreach (string la in temp)
+            {
+                string x = Path.GetFileName(la);
+                this.Iconnames.Add(x);
+                p++;
+                itemsLoaded++;
+                Iconworker1.ReportProgress(p);
+            }
+            
+        }
+
+        private void Iconworker1_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            this.toolStripProgressBar1.Value = e.ProgressPercentage;
+            this.toolStripStatusLabel5.Text = itemsLoaded.ToString();
+        }
+
+        private void Iconworker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
             toolStripStatusLabel3.Text = "Loading Complete";
             toolStripProgressBar1.Value = 0;
         }
+        #endregion
+
+        private void viewIconsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            IconViewer lala = new IconViewer(this);
+            lala.ShowDialog();
+            IconViewer.CheckForIllegalCrossThreadCalls = false;
+        }
+
         
+
     }
 }
