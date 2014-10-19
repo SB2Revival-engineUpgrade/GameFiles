@@ -1,0 +1,2 @@
+Data\Graphics\Engine\Fonts\Print.xnb
+Data\Graphics\Engine\Fonts\Script.xnb

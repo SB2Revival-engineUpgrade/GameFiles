@@ -1,0 +1,6 @@
+C:\Users\MutationInc\Desktop\SB2Revival_Test\Game\Data\Graphics\Engine\Fonts\Print.xnb
+C:\Users\MutationInc\Desktop\SB2Revival_Test\Game\Data\Graphics\Engine\Fonts\Script.xnb
+C:\Users\MutationInc\Desktop\SB2Revival_Test\Game\Sim Brothel 2 Revival.exe
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel\obj\x86\Release\Brothel.csprojResolveAssemblyReference.cache
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel\obj\x86\Release\Sim Brothel 2 Revival.exe
