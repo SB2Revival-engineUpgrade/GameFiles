@@ -88,6 +88,22 @@ namespace SB2Revival.ElemCl
     }
     public class ElemAtk
     {
+        #region virtial
+        private int elemID;
+        #endregion
+        #region get/Sets
+        public int ElemID
+        {get{return this.elemID;}private set{this.elemID=value}}
+        #endregion
+        #region class
+        public ElemAtk(int elemId)
+        {
+            this.elemID = elemId;
+        }
+        public ElemAtk()
+        {
 
+        }
+        #endregion
     }
 }

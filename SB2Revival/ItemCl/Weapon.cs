@@ -336,8 +336,13 @@ namespace SB2Revival.ItemCl
                 //todo write the negeffects
                 Wr.Write(this.plusEffects.Count);
                 //todo write plus effects
+                #region elem attack
                 Wr.Write(this.elemAttacks.Count);
-                //todo write elem attacks
+                foreach (ElemAtk ea in elemAttacks)
+                {
+                    Wr.Write(ea.ElemID);
+                }
+                #endregion
                 #endregion
                 #region write enums
                 Wr.Write(this.hands.ToString());
