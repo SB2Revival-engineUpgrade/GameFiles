@@ -12,6 +12,7 @@ using System.Text;
 using SB2Revival.CharaClasses.Base;
 using SB2Revival.ElemCl;
 using SB2Revival.StatusCl;
+using System.IO;
 namespace SB2Revival.ItemCl
 {
     public enum wepType
@@ -54,15 +55,137 @@ namespace SB2Revival.ItemCl
         List<StatusPlus> plusEffects = new List<StatusPlus>();
         List<StatusNeg> negEffects = new List<StatusNeg>();
         List<int> skillIds = new List<int>();
+        wepType typeWep;
         #endregion
         #region Property Region
+        public wepType TypeWep
+        {
+            get
+            {
+                return this.typeWep;
+            }
+            private set
+            {
+                this.typeWep = value;
+            }
+        }
+        public List<int> SkillIds
+        {
+            get
+            {
+                return this.skillIds;
+            }
+            private set
+            {
+                this.skillIds = value;
+            }
+        }
+        public List<StatusNeg> NegEffects
+        {
+            get
+            {
+                return this.negEffects;
+            }
+            private set
+            {
+                this.negEffects = value;
+            }
+        }
+        public List<StatusPlus> PlusEffects
+        {
+            get
+            {
+                return this.plusEffects;
+            }
+            private set
+            {
+                this.plusEffects = value;
+            }
+        }
+        public List<ElemAtk> ElemAttacks
+        {
+            get
+            {
+                return this.elemAttacks;
+            }
+            private set
+            {
+                this.elemAttacks = value;
+            }
+        }
+        public bool ReqFem
+        {
+            get
+            {
+                return this.reqFem;
+            }
+            private set
+            {
+                this.reqFem = value;
+            }
+        }
+        public int AniId2
+        {
+            get
+            {
+                return this.aniId2;
+            }
+            private set
+            {
+                this.aniId2 = value;
+            }
+        }
+        public int AniId1
+        {
+            get
+            {
+                return this.aniId1;
+            }
+            private set
+            {
+                this.aniId1 = value;
+            }
+        }
+        public int PhyDef
+        {
+            get
+            {
+                return this.phyDef;
+            }
+            private set
+            {
+                this.phyDef = value;
+            }
+        }
+        public int MagDef
+        {
+            get
+            {
+                return this.magDef;
+            }
+            private set
+            {
+                this.magDef = value;
+            }
+        }
+        public int WeapAtk
+        {
+            get
+            {
+                return this.weapAtk;
+            }
+            private set
+            {
+                this.weapAtk = value;
+            }
+        }
         public ItType PTyOfItem
         {
             get
             {
                 return this.TyOfItem;
             }
-            set
+            private set
             {
                 this.TyOfItem = value;
             }
@@ -94,11 +217,15 @@ namespace SB2Revival.ItemCl
             get
             {
                 return this.wepStats;
-            }private set
+            }
+            private set
             {
                 this.wepStats = value;
             }
         }
+        public Attrib ReqStats
+        { get { return this.reqStats; } private set { this.reqStats = value; } }
+
         #endregion
         #region Constructor Region
         public Weapon(
@@ -164,5 +291,81 @@ namespace SB2Revival.ItemCl
             return base.ToString();
         }
         #endregion
+        #region Reader/Writer
+        public void Read(string Loc)
+        { }
+        public void Write()
+        {
+            string x = Environment.CurrentDirectory + @"\Data\Game\Weapons\";
+            Directory.CreateDirectory(x);
+            using (BinaryWriter Wr = new BinaryWriter(File.Open(x + this.Name+".Wea", FileMode.Create)))
+            {
+                #region strings
+                Wr.Write(this.Name);
+                Wr.Write(this.Description);
+                Wr.Write(this.ICon);
+                #endregion
+                #region ints
+                Wr.Write(this.aniId1);
+                Wr.Write(this.aniId2);
+                Wr.Write(this.ID);
+                Wr.Write(this.Price);
+                Wr.Write(this.phyDef);
+                Wr.Write(this.magDef);
+                Wr.Write(this.weapAtk);
+                #endregion
+                #region bools
+                Wr.Write(this.reqFem);
+                #endregion
+                #region Lists
+                #region intlists
+                Wr.Write(skillIds.Count);
+                foreach (int tp in this.skillIds)
+                {
+                    Wr.Write(tp);
+                }
+                #endregion
+                #region String lists
+                Wr.Write(this.blockedClasses.Count);
+                foreach (string tes in this.blockedClasses)
+                {
+                    Wr.Write(tes);
+                }
+                #endregion
+                Wr.Write(this.negEffects.Count);
+                //todo write the negeffects
+                Wr.Write(this.plusEffects.Count);
+                //todo write plus effects
+                Wr.Write(this.elemAttacks.Count);
+                //todo write elem attacks
+                #endregion
+                #region write enums
+                Wr.Write(this.hands.ToString());
+                Wr.Write(typeWep.ToString());
+                Wr.Write(this.Loc.ToString());
+                Wr.Write(this.TyOfItem.ToString());
+                #endregion
+                #region write attrib
+                Wr.Write(wepStats.Agility);
+                Wr.Write(wepStats.Beauty);
+                Wr.Write(wepStats.Charisma);
+                Wr.Write(wepStats.Constitution);
+                Wr.Write(wepStats.Intelligence);
+                Wr.Write(wepStats.Obedience);
+                Wr.Write(wepStats.Sex);
+                Wr.Write(wepStats.Strength);
+                Wr.Write(reqStats.Agility);
+                Wr.Write(reqStats.Beauty);
+                Wr.Write(reqStats.Charisma);
+                Wr.Write(reqStats.Constitution);
+                Wr.Write(reqStats.Intelligence);
+                Wr.Write(reqStats.Obedience);
+                Wr.Write(reqStats.Sex);
+                Wr.Write(reqStats.Strength);
+                #endregion
+            }
+
+        }
+        #endregion 
     }
 }

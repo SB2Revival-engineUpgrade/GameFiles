@@ -70,27 +70,27 @@ namespace SB2Revival.ItemCl
         /// <summary>
         /// The Name of the object
         /// </summary>
-        string name;
+        protected string name;
         /// <summary>
         /// The discription of the item
         /// </summary>
-        string description;
+        protected string description;
         /// <summary>
         /// the price of the object
         /// </summary>
-        int price;
+        protected int price;
         /// <summary>
         /// this is to tell if the item is equiped
         /// </summary>
-        bool equipped;
+        protected bool equipped;
         /// <summary>
         /// the item id
         /// </summary>
-        int id;
+        protected int id;
         /// <summary>
         /// this stores the items icon string, really just name+Extention, the file location will be stored elsewhere
         /// </summary>
-        string Icon;
+        protected string Icon;
         /// <summary>
         /// this will hold what type of item it is
         /// </summary>
@@ -175,7 +175,7 @@ namespace SB2Revival.ItemCl
             }
         }
         public ItType Type
-        { get { return this.type; } private set { this.type = value; } }
+        { get { return this.type; } protected set { this.type = value; } }
         #endregion
         #region Constructor Region
         public BaseItem(string name, int price,int ID,string discription,ItType type, params String[] blockedClasses)
