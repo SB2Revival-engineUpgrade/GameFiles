@@ -332,10 +332,18 @@ namespace SB2Revival.ItemCl
                     Wr.Write(tes);
                 }
                 #endregion
+                #region effect list write
                 Wr.Write(this.negEffects.Count);
-                //todo write the negeffects
+                foreach (StatusNeg tes in this.negEffects)
+                {
+                    Wr.Write(tes.StateID);
+                }
                 Wr.Write(this.plusEffects.Count);
-                //todo write plus effects
+                foreach (StatusPlus tes in this.plusEffects)
+                {
+                    Wr.Write(tes.StateID);
+                }
+                #endregion
                 #region elem attack
                 Wr.Write(this.elemAttacks.Count);
                 foreach (ElemAtk ea in elemAttacks)

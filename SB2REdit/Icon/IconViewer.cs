@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using SB2REdit.Main;
-using System.Drawing;
 namespace SB2REdit.Icon
 {
     public partial class IconViewer : Form

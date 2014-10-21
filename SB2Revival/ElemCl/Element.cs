@@ -93,7 +93,7 @@ namespace SB2Revival.ElemCl
         #endregion
         #region get/Sets
         public int ElemID
-        {get{return this.elemID;}private set{this.elemID=value}}
+        { get { return this.elemID; } private set { this.elemID = value; } }
         #endregion
         #region class
         public ElemAtk(int elemId)

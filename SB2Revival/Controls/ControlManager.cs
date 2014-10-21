@@ -26,6 +26,12 @@ namespace SB2Revival.Controls
                 return spriteFont;
             }
         }
+        bool acceptInput = true;
+        public bool AcceptInput
+        {
+            get { return acceptInput; }
+            set { acceptInput = value; }
+        }
         #endregion
         #region Constructors
         public ControlManager(SpriteFont spriteFont) : base()
@@ -44,33 +50,25 @@ namespace SB2Revival.Controls
         #region Methods
         public void Update(GameTime gameTime, PlayerIndex playerIndex)
         {
-            if (this.Count == 0)
-            {
+            if (Count == 0)
                 return;
-            }
             foreach (Control c in this)
             {
                 if (c.Enabled)
-                {
                     c.Update(gameTime);
-                }
                 if (c.HasFocus)
-                {
                     c.HandleInput(playerIndex);
-                }
             }
+            if (!AcceptInput)
+                return;
             if (InputHandler.ButtonPressed(Buttons.LeftThumbstickUp, playerIndex) ||
-                InputHandler.ButtonPressed(Buttons.DPadUp, playerIndex) ||
-                InputHandler.KeyPressed(Keys.Up))
-            {
-                this.PreviousControl();
-            }
+            InputHandler.ButtonPressed(Buttons.DPadUp, playerIndex) ||
+            InputHandler.KeyPressed(Keys.Up))
+                PreviousControl();
             if (InputHandler.ButtonPressed(Buttons.LeftThumbstickDown, playerIndex) ||
-                InputHandler.ButtonPressed(Buttons.DPadDown, playerIndex) ||
-                InputHandler.KeyPressed(Keys.Down))
-            {
-                this.NextControl();
-            }
+            InputHandler.ButtonPressed(Buttons.DPadDown, playerIndex) ||
+            InputHandler.KeyPressed(Keys.Down))
+                NextControl();
         }
         public void Draw(SpriteBatch spriteBatch)
         {

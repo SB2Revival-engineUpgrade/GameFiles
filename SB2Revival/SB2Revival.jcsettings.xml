@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<JustCodeSettings Version="0.0" Timestamp="a9a0a646-46c8-4e30-a510-a56b92b1c9d0">
+  <NamespaceContributionSettings xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <IgnoredFolders>
+      <Item>CharaClasses/Base</Item>
+    </IgnoredFolders>
+  </NamespaceContributionSettings>
+</JustCodeSettings>

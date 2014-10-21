@@ -90,16 +90,10 @@ namespace SB2Revival.Controls
                 this.value = value;
             }
         }
-        public bool HasFocus
+        public virtual bool HasFocus
         {
-            get
-            {
-                return this.hasFocus;
-            }
-            set
-            {
-                this.hasFocus = value;
-            }
+            get { return hasFocus; }
+            set { hasFocus = value; }
         }
         public bool Enabled
         {

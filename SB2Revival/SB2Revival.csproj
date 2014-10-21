@@ -88,21 +88,27 @@
     <Reference Include="System.Net" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CharaClasses\Base\AttibPair.cs" />
     <Compile Include="CharaClasses\Base\Attrib.cs" />
-    <Compile Include="CharaClasses\Character.cs" />
+    <Compile Include="CharaClasses\Entity.cs" />
     <Compile Include="Controls\Control.cs" />
     <Compile Include="Controls\ControlManager.cs" />
     <Compile Include="Controls\Label.cs" />
     <Compile Include="Controls\LeftRightSelector.cs" />
     <Compile Include="Controls\LinkLabel.cs" />
+    <Compile Include="Controls\ListBox.cs" />
     <Compile Include="Controls\PictureBox.cs" />
     <Compile Include="ElemCl\Element.cs" />
+    <Compile Include="EntityManager.cs" />
     <Compile Include="Errors\ErrorFileNotFound.cs" />
     <Compile Include="GameState.cs" />
     <Compile Include="GameStateManager.cs" />
     <Compile Include="InputHandler.cs" />
     <Compile Include="ItemCl\BaseItem.cs" />
+    <Compile Include="ItemCl\ItemDataManager.cs" />
+    <Compile Include="ItemCl\ItemMan.cs" />
     <Compile Include="ItemCl\Weapon.cs" />
+    <Compile Include="ItemCl\WeaponData.cs" />
     <Compile Include="Music\TCallbackFunc.cs" />
     <Compile Include="Music\TBPMDetectionMethod.cs" />
     <Compile Include="Music\TCallbackMessage.cs" />
@@ -147,6 +153,8 @@
     <Compile Include="TileEngine\TileInfo.cs" />
     <Compile Include="TileEngine\TileMap.cs" />
     <Compile Include="TileEngine\TileSet.cs" />
+    <Compile Include="WorldCl\Level.cs" />
+    <Compile Include="WorldCl\World.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Errors\SoundEffects\" />

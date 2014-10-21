@@ -9,7 +9,6 @@ using System;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using SB2Revival.Music;
-using SB2Revival.Music;
 namespace SB2Revival.Music
 {
     #region Structure and Enum
