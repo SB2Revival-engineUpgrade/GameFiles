@@ -1,0 +1,8 @@
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2RStatMockup\obj\Debug\SB2RStatMockup.csprojResolveAssemblyReference.cache
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2RStatMockup\obj\Debug\SB2RStatMockup.Form1.resources
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2RStatMockup\obj\Debug\SB2RStatMockup.Properties.Resources.resources
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2RStatMockup\obj\Debug\SB2RStatMockup.csproj.GenerateResource.Cache
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2RStatMockup\bin\Debug\SB2RStatMockup.exe
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2RStatMockup\bin\Debug\SB2RStatMockup.pdb
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2RStatMockup\obj\Debug\SB2RStatMockup.exe
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2RStatMockup\obj\Debug\SB2RStatMockup.pdb

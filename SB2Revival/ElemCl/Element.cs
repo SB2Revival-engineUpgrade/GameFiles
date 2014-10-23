@@ -90,15 +90,37 @@ namespace SB2Revival.ElemCl
     {
         #region virtial
         private int elemID;
+        private byte elemPer;
         #endregion
         #region get/Sets
+        public byte ElemPer
+        {
+            get
+            {
+                return this.elemPer;
+            }
+            set
+            {
+                this.elemPer = value;
+            }
+        }
         public int ElemID
-        { get { return this.elemID; } private set { this.elemID = value; } }
+        {
+            get
+            {
+                return this.elemID;
+            }
+            set
+            {
+                this.elemID = value;
+            }
+        }
         #endregion
         #region class
-        public ElemAtk(int elemId)
+        public ElemAtk(int elemId,byte pers)
         {
             this.elemID = elemId;
+            this.elemPer = pers;
         }
         public ElemAtk()
         {

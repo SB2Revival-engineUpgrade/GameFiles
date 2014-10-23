@@ -123,8 +123,9 @@
       <Name>SB2Revival</Name>
     </ProjectReference>
     <ProjectReference Include="..\BrothelContent\BrothelContent.contentproj">
-      <Name>BrothelContent</Name>
+      <Name>BrothelContent %28Data%29</Name>
       <XnaReferenceType>Content</XnaReferenceType>
+      <Project>{D5C224EB-B849-48C5-8ADE-D212CBFD4FE3}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

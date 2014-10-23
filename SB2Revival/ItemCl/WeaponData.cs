@@ -7,7 +7,6 @@ namespace SB2Revival.ItemCl
 {
     public class WeaponData
     {
-        
     }
     public class ArmorData
     { }
