@@ -9,3 +9,14 @@ C:\Users\MutationInc\documents\visual studio 2012\Projects\SB2Revival_MonoGames\
 C:\Users\MutationInc\documents\visual studio 2012\Projects\SB2Revival_MonoGames\SB2R_ADMIN\bin\Debug\Sim Brothel 2 Revival Dev-Admin Tools.pdb
 C:\Users\MutationInc\documents\visual studio 2012\Projects\SB2Revival_MonoGames\SB2R_ADMIN\obj\Debug\Sim Brothel 2 Revival Dev-Admin Tools.exe
 C:\Users\MutationInc\documents\visual studio 2012\Projects\SB2Revival_MonoGames\SB2R_ADMIN\obj\Debug\Sim Brothel 2 Revival Dev-Admin Tools.pdb
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2R_ADMIN\bin\Debug\Sim Brothel 2 Revival Dev-Admin Tools.exe
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2R_ADMIN\bin\Debug\Sim Brothel 2 Revival Dev-Admin Tools.pdb
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2R_ADMIN\bin\Debug\SB2R_MU001.dll
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2R_ADMIN\bin\Debug\SB2R_MU001.pdb
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2R_ADMIN\obj\Debug\SB2R_ADMIN.csprojResolveAssemblyReference.cache
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2R_ADMIN\obj\Debug\SB2R_ADMIN.AdminToolsCollect.resources
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2R_ADMIN\obj\Debug\SB2R_ADMIN.Properties.Resources.resources
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2R_ADMIN\obj\Debug\SB2R_ADMIN.ScreenSize.SizeEdit.resources
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2R_ADMIN\obj\Debug\SB2R_ADMIN.csproj.GenerateResource.Cache
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2R_ADMIN\obj\Debug\Sim Brothel 2 Revival Dev-Admin Tools.exe
+C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\SB2R_ADMIN\obj\Debug\Sim Brothel 2 Revival Dev-Admin Tools.pdb

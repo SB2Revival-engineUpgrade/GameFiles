@@ -42,6 +42,13 @@
       <SubType>Designer</SubType>
     </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Game\Elements\" />
+    <Folder Include="Music\BGM\" />
+    <Folder Include="Music\BGS\" />
+    <Folder Include="Music\ME\" />
+    <Folder Include="Music\SE\" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
   <!--  To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

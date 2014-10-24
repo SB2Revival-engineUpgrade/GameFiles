@@ -7,7 +7,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\MutationInc\documents\visual studio 2012\Projects\SB2Revival\Brothel\Brothel\bin\x86\Debug\Data\Graphics\Engine\Fonts\Print.xnb</Output>
+      <Output>C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel\bin\x86\Debug\Data\Graphics\Engine\Fonts\Print.xnb</Output>
       <Time>2014-10-14T20:37:18.612722-06:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\MutationInc\documents\visual studio 2012\Projects\SB2Revival\Brothel\Brothel\bin\x86\Debug\Data\Graphics\Engine\Fonts\Script.xnb</Output>
+      <Output>C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel\bin\x86\Debug\Data\Graphics\Engine\Fonts\Script.xnb</Output>
       <Time>2014-10-14T23:33:05.4676814-06:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
@@ -26,10 +26,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\MutationInc\documents\visual studio 2012\Projects\SB2Revival\Brothel\BrothelContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\MutationInc\documents\visual studio 2012\Projects\SB2Revival\Brothel\Brothel\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\MutationInc\documents\visual studio 2012\Projects\SB2Revival\Brothel\Brothel\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\MutationInc\documents\visual studio 2012\Projects\SB2Revival\Brothel\Brothel\bin\x86\Debug\Data\</OutputDirectory>
+      <RootDirectory>C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\BrothelContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\MutationInc\Desktop\GameFiles\branches\MutesDevelopFork\Brothel\Brothel\bin\x86\Debug\Data\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

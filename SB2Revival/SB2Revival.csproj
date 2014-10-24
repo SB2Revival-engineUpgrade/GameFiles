@@ -31,16 +31,18 @@
     <XnaCompressContent>false</XnaCompressContent>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
-    <DebugType>pdbonly</DebugType>
+    <DebugType>none</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\x86\Release</OutputPath>
-    <DefineConstants>TRACE;WINDOWS</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <DefineConstants>WINDOWS</DefineConstants>
+    <ErrorReport>none</ErrorReport>
+    <WarningLevel>0</WarningLevel>
     <NoStdLib>true</NoStdLib>
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <PlatformTarget>x86</PlatformTarget>
     <XnaCompressContent>true</XnaCompressContent>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <LangVersion>5</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
@@ -86,20 +88,27 @@
     <Reference Include="System.Net" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CharaClasses\Base\AttibPair.cs" />
     <Compile Include="CharaClasses\Base\Attrib.cs" />
-    <Compile Include="CharaClasses\Character.cs" />
+    <Compile Include="CharaClasses\Entity.cs" />
     <Compile Include="Controls\Control.cs" />
     <Compile Include="Controls\ControlManager.cs" />
     <Compile Include="Controls\Label.cs" />
     <Compile Include="Controls\LeftRightSelector.cs" />
     <Compile Include="Controls\LinkLabel.cs" />
+    <Compile Include="Controls\ListBox.cs" />
     <Compile Include="Controls\PictureBox.cs" />
+    <Compile Include="ElemCl\Element.cs" />
+    <Compile Include="EntityManager.cs" />
     <Compile Include="Errors\ErrorFileNotFound.cs" />
     <Compile Include="GameState.cs" />
     <Compile Include="GameStateManager.cs" />
     <Compile Include="InputHandler.cs" />
     <Compile Include="ItemCl\BaseItem.cs" />
+    <Compile Include="ItemCl\ItemDataManager.cs" />
+    <Compile Include="ItemCl\ItemMan.cs" />
     <Compile Include="ItemCl\Weapon.cs" />
+    <Compile Include="ItemCl\WeaponData.cs" />
     <Compile Include="Music\TCallbackFunc.cs" />
     <Compile Include="Music\TBPMDetectionMethod.cs" />
     <Compile Include="Music\TCallbackMessage.cs" />
@@ -133,6 +142,8 @@
     <Compile Include="SpriteCl\AnimatedSprite.cs" />
     <Compile Include="SpriteCl\Animation.cs" />
     <Compile Include="SpriteCl\AnimationKey.cs" />
+    <Compile Include="SpriteCl\DynamicSprite.cs" />
+    <Compile Include="StatusCl\StatusPlus.cs" />
     <Compile Include="TileEngine\Camera.cs" />
     <Compile Include="TileEngine\Engine.cs" />
     <Compile Include="TileEngine\EventInfo.cs" />
@@ -142,8 +153,12 @@
     <Compile Include="TileEngine\TileInfo.cs" />
     <Compile Include="TileEngine\TileMap.cs" />
     <Compile Include="TileEngine\TileSet.cs" />
+    <Compile Include="WorldCl\Level.cs" />
+    <Compile Include="WorldCl\World.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Errors\SoundEffects\" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
   <!--

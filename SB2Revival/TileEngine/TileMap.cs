@@ -65,14 +65,25 @@ namespace SB2Revival.TileEngine
         #region Method Region
         public void Draw(SpriteBatch spriteBatch, Camera camera)
         {
+            Point cameraPoint = Engine.VectorToCell(camera.Position * (1 / camera.Zoom));
+            Point viewPoint = Engine.VectorToCell(
+            new Vector2(
+            (camera.Position.X + camera.ViewportRectangle.Width) * (1 / camera.Zoom),
+            (camera.Position.Y + camera.ViewportRectangle.Height) * (1 / camera.Zoom)));
+            Point min = new Point();
+            Point max = new Point();
+            min.X = Math.Max(0, cameraPoint.X - 1);
+            min.Y = Math.Max(0, cameraPoint.Y - 1);
+            max.X = Math.Min(viewPoint.X + 1, mapWidth);
+            max.Y = Math.Min(viewPoint.Y + 1, mapHeight);
             Rectangle destination = new Rectangle(0, 0, Engine.TileWidth, Engine.TileHeight);
             TileInfo tile;
             foreach (MapLayer layer in mapLayers)
             {
-                for (int y = 0; y < layer.Height; y++)
+                for (int y = min.Y; y < max.Y; y++)
                 {
                     destination.Y = y * Engine.TileHeight;
-                    for (int x = 0; x < layer.Width; x++)
+                    for (int x = min.X; x < max.X; x++)
                     {
                         tile = layer.GetTile(x, y);
                         if (tile.TileIndex == -1 || tile.TileSet == -1)

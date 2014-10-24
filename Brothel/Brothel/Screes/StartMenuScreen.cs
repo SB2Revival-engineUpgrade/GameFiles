@@ -28,7 +28,6 @@ namespace SB2R.Screes
         LinkLabel exitGame;
         LinkLabel continueGame;
         LinkLabel optGame;
-        LinkLabel resGame;
         float maxItemWidth = 0f;
         #endregion
         #region Property Region

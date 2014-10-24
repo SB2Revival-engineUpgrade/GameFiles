@@ -23,7 +23,6 @@ namespace SB2R.Screes
     {
         #region Field Region
         LeftRightSelector genderSelector;
-        LeftRightSelector classSelector;
         PictureBox backgroundImage;
         string[] ScreenRes;
         ScreenOpt temp = new ScreenOpt();
