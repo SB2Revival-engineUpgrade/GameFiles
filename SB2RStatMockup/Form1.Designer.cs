@@ -53,7 +53,7 @@
             this.label38 = new System.Windows.Forms.Label();
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.VigTxt = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
@@ -68,9 +68,9 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.MPtxt = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.MaaTXT = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
@@ -93,8 +93,8 @@
             this.label33 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.SpdTXT = new System.Windows.Forms.TextBox();
+            this.CouTxt = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -107,10 +107,19 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.DesBox = new SB2RStatMockup.NumericTextBox();
-            this.StrBox = new SB2RStatMockup.NumericTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.DesBox = new SB2RStatMockup.NumericTextBox();
+            this.StrBox = new SB2RStatMockup.NumericTextBox();
             this.BeaBox = new SB2RStatMockup.NumericTextBox();
             this.wisBox = new SB2RStatMockup.NumericTextBox();
             this.ObdBox = new SB2RStatMockup.NumericTextBox();
@@ -122,15 +131,6 @@
             this.AgiBox = new SB2RStatMockup.NumericTextBox();
             this.ChaBox = new SB2RStatMockup.NumericTextBox();
             this.VitBox = new SB2RStatMockup.NumericTextBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -249,7 +249,7 @@
             this.tableLayoutPanel3.Controls.Add(this.label38, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.textBox18, 1, 1);
             this.tableLayoutPanel3.Controls.Add(this.label29, 0, 2);
-            this.tableLayoutPanel3.Controls.Add(this.textBox17, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.VigTxt, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.label36, 0, 3);
             this.tableLayoutPanel3.Controls.Add(this.label41, 0, 4);
             this.tableLayoutPanel3.Controls.Add(this.label39, 0, 5);
@@ -382,13 +382,13 @@
             this.label29.TabIndex = 47;
             this.label29.Text = "Customers";
             // 
-            // textBox17
+            // VigTxt
             // 
-            this.textBox17.Enabled = false;
-            this.textBox17.Location = new System.Drawing.Point(103, 3);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(100, 20);
-            this.textBox17.TabIndex = 34;
+            this.VigTxt.Enabled = false;
+            this.VigTxt.Location = new System.Drawing.Point(103, 3);
+            this.VigTxt.Name = "VigTxt";
+            this.VigTxt.Size = new System.Drawing.Size(100, 20);
+            this.VigTxt.TabIndex = 34;
             // 
             // label36
             // 
@@ -484,9 +484,9 @@
             this.tableLayoutPanel2.Controls.Add(this.label19, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label22, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.textBox11, 1, 5);
-            this.tableLayoutPanel2.Controls.Add(this.textBox4, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.MPtxt, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.textBox10, 1, 4);
-            this.tableLayoutPanel2.Controls.Add(this.textBox7, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.MaaTXT, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.textBox9, 1, 3);
             this.tableLayoutPanel2.Controls.Add(this.label28, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.label32, 0, 4);
@@ -509,8 +509,8 @@
             this.tableLayoutPanel2.Controls.Add(this.label33, 0, 15);
             this.tableLayoutPanel2.Controls.Add(this.textBox6, 1, 12);
             this.tableLayoutPanel2.Controls.Add(this.textBox14, 1, 13);
-            this.tableLayoutPanel2.Controls.Add(this.textBox15, 1, 14);
-            this.tableLayoutPanel2.Controls.Add(this.textBox16, 1, 15);
+            this.tableLayoutPanel2.Controls.Add(this.SpdTXT, 1, 14);
+            this.tableLayoutPanel2.Controls.Add(this.CouTxt, 1, 15);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(173, 39);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 16;
@@ -577,13 +577,13 @@
             this.textBox11.Size = new System.Drawing.Size(100, 20);
             this.textBox11.TabIndex = 28;
             // 
-            // textBox4
+            // MPtxt
             // 
-            this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(96, 29);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 22;
+            this.MPtxt.Enabled = false;
+            this.MPtxt.Location = new System.Drawing.Point(96, 29);
+            this.MPtxt.Name = "MPtxt";
+            this.MPtxt.Size = new System.Drawing.Size(100, 20);
+            this.MPtxt.TabIndex = 22;
             // 
             // textBox10
             // 
@@ -593,13 +593,13 @@
             this.textBox10.Size = new System.Drawing.Size(100, 20);
             this.textBox10.TabIndex = 27;
             // 
-            // textBox7
+            // MaaTXT
             // 
-            this.textBox7.Enabled = false;
-            this.textBox7.Location = new System.Drawing.Point(96, 55);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 25;
+            this.MaaTXT.Enabled = false;
+            this.MaaTXT.Location = new System.Drawing.Point(96, 55);
+            this.MaaTXT.Name = "MaaTXT";
+            this.MaaTXT.Size = new System.Drawing.Size(100, 20);
+            this.MaaTXT.TabIndex = 25;
             // 
             // textBox9
             // 
@@ -790,21 +790,21 @@
             this.textBox14.Size = new System.Drawing.Size(100, 20);
             this.textBox14.TabIndex = 31;
             // 
-            // textBox15
+            // SpdTXT
             // 
-            this.textBox15.Enabled = false;
-            this.textBox15.Location = new System.Drawing.Point(96, 367);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(100, 20);
-            this.textBox15.TabIndex = 32;
+            this.SpdTXT.Enabled = false;
+            this.SpdTXT.Location = new System.Drawing.Point(96, 367);
+            this.SpdTXT.Name = "SpdTXT";
+            this.SpdTXT.Size = new System.Drawing.Size(100, 20);
+            this.SpdTXT.TabIndex = 32;
             // 
-            // textBox16
+            // CouTxt
             // 
-            this.textBox16.Enabled = false;
-            this.textBox16.Location = new System.Drawing.Point(96, 393);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(100, 20);
-            this.textBox16.TabIndex = 33;
+            this.CouTxt.Enabled = false;
+            this.CouTxt.Location = new System.Drawing.Point(96, 393);
+            this.CouTxt.Name = "CouTxt";
+            this.CouTxt.Size = new System.Drawing.Size(100, 20);
+            this.CouTxt.TabIndex = 33;
             // 
             // tableLayoutPanel1
             // 
@@ -955,24 +955,6 @@
             this.label4.TabIndex = 1;
             this.label4.Text = "Strength";
             // 
-            // DesBox
-            // 
-            this.DesBox.AllowSpace = false;
-            this.DesBox.Location = new System.Drawing.Point(61, 315);
-            this.DesBox.Name = "DesBox";
-            this.DesBox.Size = new System.Drawing.Size(95, 20);
-            this.DesBox.TabIndex = 17;
-            this.DesBox.Text = "0";
-            // 
-            // StrBox
-            // 
-            this.StrBox.AllowSpace = false;
-            this.StrBox.Location = new System.Drawing.Point(61, 3);
-            this.StrBox.Name = "StrBox";
-            this.StrBox.Size = new System.Drawing.Size(95, 20);
-            this.StrBox.TabIndex = 4;
-            this.StrBox.Text = "0";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -990,6 +972,100 @@
             this.label5.Size = new System.Drawing.Size(45, 13);
             this.label5.TabIndex = 2;
             this.label5.Text = "Wisdom";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.richTextBox2);
+            this.tabPage2.Controls.Add(this.label2);
+            this.tabPage2.Controls.Add(this.richTextBox1);
+            this.tabPage2.Controls.Add(this.label1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(901, 532);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "New Elem/Stats ideas";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.Location = new System.Drawing.Point(114, 217);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(528, 96);
+            this.richTextBox2.TabIndex = 3;
+            this.richTextBox2.Text = "Status Attack-\nStatusid-int\nstatusPers-byte(1-100)\nbool BypassDef\n";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(302, 201);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(95, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Status Effect Array";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Enabled = false;
+            this.richTextBox1.Location = new System.Drawing.Point(114, 58);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(528, 84);
+            this.richTextBox1.TabIndex = 1;
+            this.richTextBox1.Text = "ElemAttack-\nElement ID int\nElem Persentage(1-100)\n\n";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(302, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(114, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Elemental Attack Array";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(901, 532);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "BodyLayouts";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(901, 532);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Training Mockups";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.notifyIcon1.BalloonTipText = "THe SB2R mockup is running";
+            this.notifyIcon1.BalloonTipTitle = "MockUp Program running";
+            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
+            this.notifyIcon1.Text = "Game Idea Mockup V1.0.0.0 is currently running\r\n";
+            this.notifyIcon1.Visible = true;
+            // 
+            // DesBox
+            // 
+            this.DesBox.AllowSpace = false;
+            this.DesBox.Location = new System.Drawing.Point(61, 315);
+            this.DesBox.Name = "DesBox";
+            this.DesBox.Size = new System.Drawing.Size(95, 20);
+            this.DesBox.TabIndex = 17;
+            this.DesBox.Text = "0";
+            // 
+            // StrBox
+            // 
+            this.StrBox.AllowSpace = false;
+            this.StrBox.Location = new System.Drawing.Point(61, 3);
+            this.StrBox.Name = "StrBox";
+            this.StrBox.Size = new System.Drawing.Size(95, 20);
+            this.StrBox.TabIndex = 4;
+            this.StrBox.Text = "0";
             // 
             // BeaBox
             // 
@@ -1090,82 +1166,6 @@
             this.VitBox.TabIndex = 10;
             this.VitBox.Text = "0";
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.richTextBox2);
-            this.tabPage2.Controls.Add(this.label2);
-            this.tabPage2.Controls.Add(this.richTextBox1);
-            this.tabPage2.Controls.Add(this.label1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(901, 532);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "New Elem/Stats ideas";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // richTextBox2
-            // 
-            this.richTextBox2.Location = new System.Drawing.Point(114, 217);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(528, 96);
-            this.richTextBox2.TabIndex = 3;
-            this.richTextBox2.Text = "Status Attack-\nStatusid-int\nstatusPers-byte(1-100)\nbool BypassDef\n";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(302, 201);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Status Effect Array";
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Enabled = false;
-            this.richTextBox1.Location = new System.Drawing.Point(114, 58);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(528, 84);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "ElemAttack-\nElement ID int\nElem Persentage(1-100)\n\n";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(302, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Elemental Attack Array";
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(901, 532);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "BodyLayouts";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(901, 532);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Training Mockups";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // notifyIcon1
-            // 
-            this.notifyIcon1.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            this.notifyIcon1.BalloonTipText = "THe SB2R mockup is running";
-            this.notifyIcon1.BalloonTipTitle = "MockUp Program running";
-            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
-            this.notifyIcon1.Text = "Game Idea Mockup V1.0.0.0 is currently running\r\n";
-            this.notifyIcon1.Visible = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1244,8 +1244,8 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox MPtxt;
+        private System.Windows.Forms.TextBox MaaTXT;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.TextBox textBox5;
@@ -1270,7 +1270,7 @@
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.TextBox textBox18;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox VigTxt;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label39;
@@ -1292,8 +1292,8 @@
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox SpdTXT;
+        private System.Windows.Forms.TextBox CouTxt;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ToolTip toolTip1;

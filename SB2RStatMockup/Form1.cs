@@ -19,12 +19,23 @@ namespace SB2RStatMockup
         private void button1_Click(object sender, EventArgs e)
         {
             #region Gen Health
-            textBox1.Text = Convert.ToString((3 * ChaBox.IntValue) + (2 * ConstBox.IntValue));
+            textBox1.Text = Convert.ToString((3 * ChaBox.IntValue) + (2 * ConstBox.IntValue)+150);
             #endregion
             #region Attack
-            textBox5.Text = Convert.ToString((StrBox.IntValue * .888) + (DexBox.IntValue / 2.5));
+            textBox5.Text = Convert.ToString((StrBox.IntValue * .888) + (DexBox.IntValue / 2.5)+10);
             #endregion
-
+            #region vigor
+            VigTxt.Text = Convert.ToString(70 + (VitBox.IntValue / 5) + (DesBox.IntValue / 5) + (SexBox.IntValue / 10));
+            #endregion
+            #region combatCounter
+            CouTxt.Text=Convert.ToString((DexBox.IntValue/10)+(AgiBox.IntValue/20)+1);
+            #endregion
+            #region MP
+            MPtxt.Text = Convert.ToString(50 + wisBox.IntValue / 10 + KnoBox.IntValue / 5 + IntlBox.IntValue / 20);
+            #endregion
+            #region speed
+            SpdTXT.Text = Convert.ToString(AgiBox.IntValue * .20);
+            #endregion
         }
     }
     public class NumericTextBox : TextBox
