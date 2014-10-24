@@ -15,6 +15,17 @@ namespace SB2RStatMockup
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            #region Gen Health
+            textBox1.Text = Convert.ToString((3 * ChaBox.IntValue) + (2 * ConstBox.IntValue));
+            #endregion
+            #region Attack
+            textBox5.Text = Convert.ToString((StrBox.IntValue * .888) + (DexBox.IntValue / 2.5));
+            #endregion
+
+        }
     }
     public class NumericTextBox : TextBox
     {
