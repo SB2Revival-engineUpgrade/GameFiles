@@ -120,6 +120,39 @@
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="richTextBox3.Text" xml:space="preserve">
+    <value>Health- This is the characters Health points
+Magic Points- Used for spells 
+Magic Attack- increases spell damage
+Elem defence-this is a combined of all the elements and it makes character able to block them(anything above 100 they start to absorb that elem)
+Dodge- % chance of dodging attack
+Loyalty- this determans chance of unit trying to attack and run away
+Phy Attack- this is the characters phy attack
+Mag Defence- this is the amount of reduction on spell damage
+Mag Counter- % chance of using same spell back on the enemy
+Strain- as this rises gives chance of causing injories
+SP- skill points to use skills
+phy def- this is the characters ability to reduce phy damage
+status defence- chance of stopping the status effect(acctual stats will be 1 for each status effect)
+speed- determains combat turns
+counter- % chance of counter physical hits
+-------------------------
+sex stats
+-------------------------
+vigor same as the game now
+Sex-loyalty- if they get abbused so much they will (if combatant-attack, if noncombat-run away)
+customers-the max ammount of customers the person can handle to take care of
+Res. Punishment-% chance of avoiding rough treatment durring sex
+strain-same as combat except for changes with more sex
+sex-passion- this shows more chance of pleasing the customers
+Moral- same as in game
+charm- higher this is the more chance of increasing the tip
+STD res-% chance of resisting STD's (this is a part of a perposed addon)
+Sex Rate- min amount they will accept for sex
+cirosity- as this rises they will become intrested in more types of sex(part of an addon)
+
+</value>
+  </data>
   <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>245, 17</value>
   </metadata>
@@ -338,7 +371,4 @@
         //j/////8D//+P/////Af//4////+AD///j////gD///+P///+A////4////z/////g=
 </value>
   </data>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>245, 17</value>
-  </metadata>
 </root>
